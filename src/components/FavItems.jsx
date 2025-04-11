@@ -3,9 +3,9 @@ import FavItem from "./FavItem.jsx";
 const FavItems = ({ favorites, removeFromFavorites }) => {
     return (
         <div className="w-[30%] p-4 bg-white rounded-3xl mt-[200px]">
-            <div className="flex justify-center items-center gap-2 mb-4">
+            <div className="flex justify-center items-center gap-2 mb-4 border-b border-slate-400">
                 <i className="ri-heart-3-line text-4xl text-black mt-1"></i>
-                <h2 className="text-[#0E2954] font-medium text-3xl">Favorite Items</h2>
+                <h2 className="text-[#0E2954] font-medium text-3xl ">Favorite Items</h2>
             </div>
 
             {favorites.length === 0 ? (
@@ -17,17 +17,18 @@ const FavItems = ({ favorites, removeFromFavorites }) => {
                 </div>
             ) : (
                 <div>
-                    {favorites.map(item => (
+                    {favorites.map((item, index) => (
                         <FavItem
                             key={item.id}
                             item={item}
                             removeFromFavorites={removeFromFavorites}
+                            isLast={index === favorites.length - 1}
                         />
                     ))}
                 </div>
             )}
 
-            <div className="mt-4 pt-4 border-t border-gray-200 flex justify-between text-2xl font-medium">
+            <div className="mt-4 pt-4 border-t border-slate-400 flex justify-between text-2xl font-medium">
                 <p className='text-left'>Total bids Amount</p>
                 <span>${favorites.reduce((total, item) => total + item.currentBidPrice, 0)}</span>
             </div>

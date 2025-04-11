@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import BidList from "./BidList.jsx";
 
@@ -18,7 +17,7 @@ const BidLists = ({ addToFavorites, favorites }) => {
             <div className=" bg-white rounded-3xl mt-10">
                 <table>
                     <thead>
-                    <tr className="text-xl text-gray-800 font-normal">
+                    <tr className="text-xl text-gray-800 font-normal border-b border-slate-400">
                         <th className="p-4 text-left">Items</th>
                         <th className="p-4 text-center">Current Bid</th>
                         <th className="p-4 text-center">Time Left</th>
@@ -26,12 +25,13 @@ const BidLists = ({ addToFavorites, favorites }) => {
                     </tr>
                     </thead>
                     <tbody>
-                    {bidLists.map(bidList => (
+                    {bidLists.map((bidList, index) => (
                         <BidList
                             key={bidList.id}
                             bidList={bidList}
                             addToFavorites={addToFavorites}
                             favorites={favorites}
+                            isLast={index === bidLists.length - 1}
                         />
                     ))}
                     </tbody>

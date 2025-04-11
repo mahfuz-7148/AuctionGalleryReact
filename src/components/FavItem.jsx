@@ -1,10 +1,12 @@
 
-const FavItem = ({ item, removeFromFavorites }) => {
+const FavItem = ({ item, removeFromFavorites, isLast }) => {
     const { image, title, currentBidPrice, bidsCount, id } = item;
 
     return (
         <div className="bg-white flex mt-5 items-center justify-between">
-            <div className="flex items-center space-x-4">
+            <div className={`flex items-center space-x-4 ${
+                !isLast ? 'border-b border-[#E5E7EB]' : ''
+            }`}>
                 <img
                     src={image}
                     className="w-24 h-20 object-cover"

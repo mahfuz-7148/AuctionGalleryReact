@@ -1,12 +1,13 @@
-
 import 'remixicon/fonts/remixicon.css';
 
-const BidList = ({ bidList, addToFavorites, favorites }) => {
+const BidList = ({ bidList, addToFavorites, favorites, isLast }) => {
     const { image, title, currentBidPrice, timeLeft, id } = bidList;
     const isFavorited = favorites.some(fav => fav.id === id);
 
     return (
-        <tr className="text-lg font-medium text-[#0E2954] border-b border-[#E5E7EB]">
+        <tr className={`text-lg font-medium text-[#0E2954] ${
+            !isLast ? 'border-b border-[#E5E7EB]' : ''
+        }`}>
             <td className="p-4 w-1/2">
                 <div className="flex items-center space-x-4">
                     <img

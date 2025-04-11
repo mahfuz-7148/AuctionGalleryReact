@@ -6,11 +6,9 @@ import FavItems from "./components/FavItems.jsx";
 import Footer from "./components/Footer.jsx";
 import { ToastContainer, toast, Zoom } from "react-toastify";
 
-
 const App = () => {
     const [favorites, setFavorites] = useState([])
-    const [totalBids, setTotalBids] = useState(0);
-
+    const [, setTotalBids] = useState(0);
 
     const calculateTotalBids = (favArray) => {
         console.log(favArray)
@@ -55,8 +53,6 @@ const App = () => {
             transition: Zoom,
         });
     };
-
-
 
     return (
         <div>
