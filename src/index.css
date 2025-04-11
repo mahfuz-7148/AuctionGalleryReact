@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.sora {
+    font-family: "Sora", sans-serif;
+
+}

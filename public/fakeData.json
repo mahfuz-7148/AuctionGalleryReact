@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Leica M3 Camera",
+    "description": "A classic Leica M3 camera, known for its exceptional build quality and historical significance in photography.",
+    "currentBidPrice": 2850,
+    "timeLeft": "4 Days Left",
+    "bidsCount": 12,
+    "image": "https://i.ibb.co.com/qFxcXV8P/Bid1-min.png"
+  },
+  {
+    "id": 2,
+    "title": "1965 Gibson SG Standard Electric Guitar",
+    "description": "A 1965 Gibson SG Standard, a legendary electric guitar favored by rock musicians for its iconic sound and design.",
+    "currentBidPrice": 1450,
+    "timeLeft": "3 Days Left",
+    "bidsCount": 15,
+    "image": "https://i.ibb.co.com/nsMtzMWB/Bid2-min.png"
+  },
+  {
+    "id": 3,
+    "title": "Original Apple Macintosh 128K (1984)",
+    "description": "An original Apple Macintosh 128K from 1984, a groundbreaking piece of technology that revolutionized personal computing.",
+    "currentBidPrice": 3450,
+    "timeLeft": "5 Days Left",
+    "bidsCount": 20,
+    "image": "https://i.ibb.co.com/gFc59Hxw/Bid3-min.png"
+  },
+  {
+    "id": 4,
+    "title": "Rolex Submariner 16610",
+    "description": "A Rolex Submariner 16610, a luxury dive watch known for its durability, precision, and timeless design.",
+    "currentBidPrice": 2050,
+    "timeLeft": "2 Days Left",
+    "bidsCount": 18,
+    "image": "https://i.ibb.co.com/s99f6njk/Bid4-min.png"
+  },
+  {
+    "id": 5,
+    "title": "First Edition 'The Great Gatsby' by F. Scott Fitzgerald",
+    "description": "A rare first edition of 'The Great Gatsby' by F. Scott Fitzgerald, a literary classic in excellent condition.",
+    "currentBidPrice": 1350,
+    "timeLeft": "3 Days Left",
+    "bidsCount": 25,
+    "image": "https://i.ibb.co.com/n8byjdKW/32078927562.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Mid-Century Modern Eames Lounge Chair",
+    "description": "A Mid-Century Modern Eames Lounge Chair, an iconic piece of furniture known for its comfort and sleek design.",
+    "currentBidPrice": 2810,
+    "timeLeft": "2 Days Left",
+    "bidsCount": 10,
+    "image": "https://i.ibb.co.com/gLDJBCCZ/A1000x-Better-Altadena-Eclectic-Study-jpg-optimal.jpg"
+
+  }
+]
